@@ -14,12 +14,7 @@ export default function ProductsLayout({
       <section className={styles.products}>
         {children}
       </section>
-      <ul className={styles.ul}>
-            <li> top </li>
-            <li> bottom</li>
-            <li> outer </li>
-            <li> acc </li>
-        </ul>
+      
     </>
     
     
