@@ -1,0 +1,6 @@
+.ul {
+    display: flex;
+    justify-items: left;
+    flex-direction: column;
+    padding: 16px;
+}

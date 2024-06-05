@@ -11,15 +11,15 @@ export default function ProductsLayout({
     
     <>
       
-      <nav className={styles.nav}>
-          <Link href="/products/woman">여성옷</Link>
-          <Link href="/products/man">남성옷</Link>
-      </nav>
-      
       <section className={styles.products}>
         {children}
-        <Link href="/products/skirt">skirt</Link>
       </section>
+      <ul className={styles.ul}>
+            <li> top </li>
+            <li> bottom</li>
+            <li> outer </li>
+            <li> acc </li>
+        </ul>
     </>
     
     

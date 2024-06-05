@@ -10,7 +10,13 @@ export default function PantsPage({params}:Props) {
    if(params.slug === 'nothing')  {
         notFound();
    }
-    return <h1>{params.slug} 제품 설명서</h1>;
+
+    return (
+        <>
+        <h1>{params.slug} 제품 설명페이지</h1>
+        
+        </>
+    );
 }
 
 export function generateStaticParams() { 
