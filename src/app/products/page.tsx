@@ -7,11 +7,12 @@ return (
     <section>
     <h1>제품 소개 페이지</h1>
     <ul>
-      
-        <li><Link href="/products/skirt">skirt</Link></li>
-        <li><Link href="/products/pants">pants</Link></li>
-        <li><Link href="/products/outer">outer</Link></li>
-        <li><Link href="/products/acc">acc</Link></li>
+        { 
+            products.map((product, index) => (
+                <li key={index}><Link href={`products/${product}`} >{product}</Link></li>
+            ))
+        }
+       
     </ul>
     </section>
 );
