@@ -1,6 +1,13 @@
 
+import { Metadata } from 'next'
 import Link from 'next/link'
 import styles from './layout.module.css'
+
+export const metadata: Metadata = {
+  title: '멋진 제품 사이트 | 전체제품 확인',
+  description: '멋진 제품을 확인해 보세요',
+  metadataBase: null
+}
 
 export default function ProductsLayout({
   children,
@@ -18,7 +25,7 @@ export default function ProductsLayout({
       
       <section className={styles.products}>
         {children}
-        <Link href="/products/skirt">skirt</Link>
+       
       </section>
     </>
     
