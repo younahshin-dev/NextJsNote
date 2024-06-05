@@ -5,7 +5,7 @@ import {notFound} from 'next/navigation'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  notFound();
+  
   return (
     <h1>홈페이지 입니다.</h1>
   )
