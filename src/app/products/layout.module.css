@@ -1,11 +1,13 @@
-.div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px;
-    border-bottom: 1px solid #132f52;
+.nav {
+    padding : 16px;
+    margin-top:8px;
+    border: 1px solid salmon;
 }
 
 .nav a {
-    padding : 0 8px;
+    padding: 0 8px;
+}
+
+.products {
+    padding: 16px;
 }
