@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 import { getProducts } from '@/service/products';
-import MeowArticle from '@/components/meowArticle'
+import MeowArticle from '@/components/meowArticle';
 export const revalidate = 10;
 
 export default async function SlugPage() { 
