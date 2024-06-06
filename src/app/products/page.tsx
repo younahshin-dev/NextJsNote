@@ -1,17 +1,19 @@
 import Link from 'next/link'
-
+import Image from 'next/image';
 import { getProducts } from '@/service/products';
 import MeowArticle from '@/components/meowArticle';
+import clothesImage from '../../../public/images/clothes.jpg'
+
 export const revalidate = 10;
 
 export default async function SlugPage() { 
     // 서버파일(데이터 베이스)에 있는 제품의 리스트를 읽어와서, 그걸 보여줌
-    throw new Error();
     const products = await getProducts();
 
     return (
         <section>
         <h1>제품 소개 페이지</h1>
+        <Image src={clothesImage} alt='Clothes' />
         <ul>
             { 
                 products.map((product, index) => (
