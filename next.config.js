@@ -24,6 +24,18 @@ const nextConfig = {
         permanent: false,
       }
     ]
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/shin',
+        destination: '/about/me/shin',
+      },
+      {
+        source: '/items/:slug',
+        destination: '/products/:slug',
+      }
+    ]
   }
 };
 
