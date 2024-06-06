@@ -18,6 +18,7 @@ export function generateMetadata({params}:Props) {
 }
 
 export default async function ProductPage({params: {slug}}:Props) { 
+
     const product = await getProduct(slug);
 
     if(!product)  {
