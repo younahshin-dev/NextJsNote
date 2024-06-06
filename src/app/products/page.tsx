@@ -13,7 +13,7 @@ export default async function SlugPage() {
     return (
         <section>
         <h1>제품 소개 페이지</h1>
-        <Image src={clothesImage} alt='Clothes' />
+        <Image src={clothesImage} alt='Clothes' priority/>
         <ul>
             { 
                 products.map((product, index) => (
